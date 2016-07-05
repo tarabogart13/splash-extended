@@ -1,0 +1,15 @@
+{
+    "HELLO": "Hello",
+    "HERE": "here",
+
+    "LOGIN_HEADLINE": "Login",
+    "LOGIN_SUBHEADLINE": "Please enter your credentials.",
+    "LOGIN_ERROR": "Wrong credentials.",
+    "LOGIN_FORBIDDEN": "Access forbidden.",
+    "LOGIN_LOCK_ERROR": "The log in is locked. Please try again in {{minutes}} minutes.",
+    "LOGIN_INTERNAL_ERROR": "Application is currently unavailable. Please contact your administrator.",
+    "LOGIN_INVALID_CONFIG": "The configuration of the App is incomplete. Please check the required steps",
+
+    "LOGIN_FORM_ORGANIZATION_ID": "Username *",
+    "LOGIN_FORM_PASSWORD": "Password *"
+}

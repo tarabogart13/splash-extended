@@ -1,0 +1,32 @@
+{
+    "name": "logicline",
+    "version": "1.0.0",
+    "description": "logicline",
+    "repository": "https://github.com/logiclinegmbh/splash-extended",
+    "license": "MIT",
+    "engines": {
+        "node": ">=6.2.0 <7.0.0",
+        "npm": "~3.9.5"
+    },
+    "dependencies": {
+        "bower": "^1.7.9",
+        "grunt": "^1.0.1",
+        "grunt-cli": "^1.2.0",
+        "grunt-contrib-clean": "^1.0.0",
+        "grunt-contrib-concat": "^1.0.1",
+        "grunt-contrib-copy": "^1.0.0",
+        "grunt-contrib-cssmin": "^1.0.1",
+        "grunt-contrib-htmlmin": "^1.4.0",
+        "grunt-contrib-imagemin": "^1.0.1",
+        "imagemin": "^5.2.1",
+        "grunt-contrib-uglify": "^1.0.1",
+        "grunt-contrib-sass": "^1.0.0",
+        "grunt-contrib-eslint": "^0.0.5",
+        "grunt-contrib-watch": "^1.0.0",
+        "grunt-filerev": "^2.3.1",
+        "grunt-usemin": "^3.1.1"
+    },
+    "scripts": {
+        "postinstall": "bower install && grunt"
+    }
+}

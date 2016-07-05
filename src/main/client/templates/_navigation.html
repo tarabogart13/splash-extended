@@ -1,0 +1,11 @@
+<nav ng-if="User" class="nav">
+  <div class="row">
+  <ul class="small-12">
+    <li class="small-12 medium-3 large-3 columns text--left cursor--pointer nav__item"
+        ng-class="{ 'active': ($state.includes('customer_search_view') && isSearchActive) || $state.includes('dashboard')}"
+        ng-click="goTo(isSearchActive? 'customer_search_view': 'dashboard');">
+      {{ 'NAVIGATION_DASHBOARD' | translate }}
+    </li>
+    <li class="hidden"></li>
+  </ul>
+</nav>

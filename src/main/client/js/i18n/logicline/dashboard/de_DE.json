@@ -1,0 +1,13 @@
+{
+  "DASHBOARD_HEADLINE"                    : "Hinweis",
+  "DASHBOARD_SUBHEADLINE"                 : "Bitte beachten Sie, dass Änderungen im Webportal erst nach kurzer Zeit in Kraft treten.",
+
+  "DASHBOARD_BOX_PERSONAL_DATA_HEADLINE"  : "Persönliche Daten",
+  "DASHBOARD_BOX_PERSONAL_DATA_CONTENT"   : "Hier können Sie Ihre persönlichen Daten, wie Name, Adresse, Email oder Telefonnummer einsehen und editieren.",
+
+  "DASHBOARD_BOX_SEARCH_CUSTOMER_HEADLINE": "Kundensuche",
+  "DASHBOARD_BOX_SEARCH_CUSTOMER_CONTENT" : "Suchen Sie nach einen bestimmten Kunden, um diesen editieren zu können.",
+
+  "DASHBOARD_BOX_CREATE_CUSTOMER_HEADLINE": "Kunde zufügen",
+  "DASHBOARD_BOX_CREATE_CUSTOMER_CONTENT" : "Fügen Sie einen neuen Kunden zu Ihrer Datenbank hinzu."
+}

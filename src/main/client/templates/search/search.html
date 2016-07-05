@@ -1,0 +1,57 @@
+<!-- Start: Preloader -->
+<div ng-include="'templates/_preloader.html'"></div>
+<!-- End: Preloader -->
+
+<!-- Start: Content -->
+<div class="content__inner">
+  <div class="row">
+    <div class="small-12 columns">
+      <h3 class="headline--border">
+        <span ng-show="!isResultChosen">{{ 'USER_SEARCH_HEADLINE' | translate}}</span>
+        <span ng-show="isResultChosen">{{'USER_SEARCH_EDIT_HEADLINE' | translate}}</span>
+        <p class="content--text" ng-show="isResultChosen">
+          <span ng-show="searchResult.customerInfo.lastName">Customer ({{ searchResult.customerInfo.lastName }})</span>
+        </p>
+      </h3>
+      <span class="help--error" ng-show="resultsList && resultsList.length === 0">{{'USER_SEARCH_ERROR' | translate}}</span>
+      <p class="content--text" ng-show="!isResultList && !isResultChosen">{{'USER_SEARCH_SUBHEADLINE' | translate}}</p>
+      <p class="content--text" ng-show="isResultList && !isResultChosen">{{'USER_SEARCH_EDIT_SUBHEADLINE1' | translate}}</p>
+      <p class="content--text" ng-show="isResultChosen">{{'USER_SEARCH_EDIT_SUBHEADLINE2' | translate}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 columns">
+  		<div class="flexsearch">
+  			<div class="flexsearch--wrapper">
+  				<form class="flexsearch--form">
+  					<div class="flexsearch--input-wrapper">
+  						<input class="input flexsearch--input" type="search"
+  						placeholder="search" data-ng-model="lastName" data-ng-change="filterCustomers()"
+  						class="novalidate form-control">
+  					</div>
+  				</form>
+  			</div>
+		  </div>
+    </div>
+  </div>
+		<div class="row spacing--top--15">
+      <div class="small-12 columns">
+        <!-- Start: Customer list -->
+          <ul class="small-12 columns list">
+            <li class="list__item cursor--pointer" ng-repeat="res in filteredCustomers | orderBy:'lastName'" ng-click="chooseResult(res.userIdFk);">
+              {{ res.lastName }}
+            </li>
+          </ul>
+        <!-- End: Customer list -->
+      </div>
+    </div>
+    <!-- Start: Buttons -->
+    <div class="row">
+      <div class="small-12 columns spacing--top--20">
+        <input type="button" class="small-5 medium-2 columns cursor--pointer btn btn--cancel" ng-click="cancelSearch();" value="{{ 'BTN_CANCEL' | translate }}"/>
+      </div>
+    </div>
+    <!-- End: Buttons -->
+
+</div>
+<!-- End: Content -->

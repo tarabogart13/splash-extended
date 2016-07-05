@@ -1,0 +1,13 @@
+{
+  "DASHBOARD_HEADLINE"                    : "Note",
+  "DASHBOARD_SUBHEADLINE"                 : "Please be aware that changes in the web portal could take up a while before come effective.",
+
+  "DASHBOARD_BOX_PERSONAL_DATA_HEADLINE"  : "Personal Data",
+  "DASHBOARD_BOX_PERSONAL_DATA_CONTENT"   : "Show and edit your personal data, e.g. name, address, email or phone here.",
+
+  "DASHBOARD_BOX_SEARCH_CUSTOMER_HEADLINE": "Search for Customer",
+  "DASHBOARD_BOX_SEARCH_CUSTOMER_CONTENT" : "Search for a specific customer and editing the customer data.",
+
+  "DASHBOARD_BOX_CREATE_CUSTOMER_HEADLINE": "Create new Customer",
+  "DASHBOARD_BOX_CREATE_CUSTOMER_CONTENT" : "Create a new customer and add the customer to your database."
+}

@@ -1,0 +1,22 @@
+{
+    "name": "logicline",
+    "version": "1.0.0",
+    "description": "logicline",
+    "engines": {
+        "node": ">=6.2.0 <7.0.0",
+        "npm": "~3.9.5"
+    },
+    "dependencies": {
+        "bower": "^1.7.9",
+        "grunt": "^1.0.1",
+        "grunt-cli": "^1.2.0",
+        "grunt-contrib-sass": "^1.0.0",
+        "grunt-contrib-watch": "^1.0.0",
+        "grunt-contrib-eslint": "^0.0.5",
+        "grunt-contrib-uglify": "^1.0.1"
+    },
+    "scripts": {
+        "postinstall": "bower install",
+        "start": "node web.js"
+    }
+}

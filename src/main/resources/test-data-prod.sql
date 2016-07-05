@@ -1,0 +1,1 @@
+insert into UserEntity(userId, username, password, token, role) values ('dhslwodasfid','admin', '$2a$12$2KcCE9/7tE2SlqPBaa4pue5sisVJWr07YwI1PFXGZd1fps.a5OzEC', 'f6fdffe48c908deb0f4c3bd36c032e72','ROLE_ADMIN');
