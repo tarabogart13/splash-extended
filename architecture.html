@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- <link rel="shortcut icon" href="assets/ico/favicon.ico"> -->
+
+<title>SPLASH extended</title>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:600,300italic'; rel='stylesheet' type='text/css'>
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="css/styles.css" rel="stylesheet">
+<!-- Just for debugging purposes. Don't actually copy this line! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>;
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>;
+<![endif]-->
+</head>
+
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="navbar-header">
+      <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logicline_logo.png" alt="Logicline logo"/>
+		</a>
+      </div>
+      <div class="navbar-collapse collapse">
+       <div class="container">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="architecture.html">Architecture</a></li>
+          <li><a href="setup.html">Setup</a></li>
+          <li><a href="walkthrough.html">Walkthrough</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="https://github.com/logiclinegmbh/splash-extended"><img src="images/icon-github.png" style="border: none;margin: -4px 0;height: 28px;width: 28px;" /> GitHub Project
+            </a>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+    <h1>Architecture</h1>
+    <h2>Overview of SPLASH architecture</h2>
+    <hr>
+    <p>In SPLASH you have a chain of tools that manage data between a web application and Salesforce.</p>
+
+    <div class="highlight"><pre><img src="images/splash-architecture.png" class="img-responsive"/></pre></div>
+
+    <ol>
+        <li><h3>Web technologies</h3>
+            <p>In the web application the most modern web technologies are used: AngularJS, HTML 5 and CSS 3.</p>
+            <ul>
+                <li>
+                    <h5>HTML 5 <img src="images/html5_logo-70x70.png" class="icon"/></h5>
+                    <p>
+                       State-of-the-Art Web Standard. Look &amp; Feel thanks to modern Web-Standards also usable for mobile end devices. </p>
+                </li>
+                <li><h5>CSS 3 <img src="images/CSS3_logo.png" class="icon"/> </h5>
+                    <p> 
+                       Style sheet language. Used for describing the presentation of a document written in a markup language. </p>
+                </li>
+                <li><h5>Angular JS <img src="images/angularjs.png" class="icon"/> </h5>
+                    <p>
+                       AngularJS lets you easily extend HTML vocabulary. The resulting environment is extraordinarily expressive, readable, and quick to develop. </p>
+                </li>
+            </ul>
+        </li>
+        <li><h3>Backend technologies</h3>
+            <p>In the backend the application deployed in Heroku is written in Java with the frameworks Spring and Hibernate, data are saved in a Postgresql database and are synchronized with Salesforce through the Heroku plugin "Heroku Connect".</p>
+            <ul>
+                <li><h5>Spring &amp; Hibernate <img src="images/hibernate-logo.png" class="icon"/></h5>
+                    <p>Heroku is a platform where you can deploy web server applications. For SPLASH the Tomcat server was used. <br/> 
+                       The application was developed in Java by using the Spring Framework and the access to the database is done through Hibernate. </p>
+                </li>
+                <li><h5>Database <img src="images/postsql_img.png" class="icon"/></h5>
+                    <p>The database used to store the data in Heroku is Postgresql. Postgresql is an open-source object-relational database management system. <br /> 
+                        Heroku creates a database instance by adding the corresponding Heroku plugin for the Postgresql database. Connection information and credentials are also provided automatically in Heroku. <br />
+                        Heroku uses Amazon AWS in the background to store the database contents.
+                    </p>
+                </li>
+                <li><h5>Heroku Connect <img src="images/platform-heroku-connect-logo.png" class="icon"/></h5>
+                    <p>
+                        Heroku Connect is a plugin that enables automatic synchronization through your Salesforce Org and the Postgresql database in Heroku. <br />
+                        You can define connection information for the plugin through the Heroku web pages. <br />
+                        Heroku Connects actually creates a separate database schema in the Postgresql database and let's you define which columns of the Salesforce objects you want to transmit in the Postgresql database. You can also define if the data transmission is unidirectional or bidirectional.
+                    </p>
+                </li>
+                <li><h5>Salesforce <img src="images/sales-block.png" class="icon"/></h5>
+                    <p>
+                        Salesforce is globally the leading CRM (Customer Relationship Management) cloud platform. <br />
+                        In the SPLASH concept Salesforce has the role of the business system that manages account information.
+                    </p>
+                </li>
+            </ul>
+        </li>
+    </ol>
+    
+    <p class="margin-top-m">
+        To sum up the general concept of the applications's architecture is that you have your business data stored in your Salesforce Org. <br />
+        Heroku Connect enables you to transmit the Salesforce data you choose to be transmitted automatically to a relational database (Postgresql) in the Heroku cloud platform.
+        Data are mapped to Java objects through the Hibernate framework and Spring exposes them as REST services to the web. <br />
+    </p>
+    <p>
+      The frontend web application provides a user-friendly web interface for the user to access Salesforce data exposed through the REST services.
+    </p>
+</div>
+    
+<div class="row" style="padding-top: 4px;">
+</div>
+    
+</div>
+<div class="row" style="padding-top: 14px;">
+</div>
+
+<div class="container" style="background-color:#282a2b; border-top: 1px solid #ccc; padding-top: 10px; font-weight: 100;">
+    <div id="footer">
+      <p class="text-muted" style="color:white;"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> logicline GmbH, 2016, <a style="color:red;" href="http://www.logicline.de">www.logicline.de</a></p>
+    </div>
+    <!-- Site footer -->
+  </div>
+
+
+<script src="lib/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+/*!
+ * Bootstrap v3.3.5 (http://getbootstrap.com)
+ Custom styles for this project
+ */
+
+.jumbotron {
+    position: relative;
+    background: #ffffff url("../images/splash-keyvisual.png") center center;
+    width: 100%;
+    min-height: 374px;
+	background-size: cover;
+    overflow: hidden;
+	margin-top: -20px;
+}
+
+ol {
+  font-size: 24px;
+  padding-left: 25px;
+}
+
+ol li h3 {
+  font-weight: 300;
+}
+
+ol li p {
+  font-size: 14px;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+.highlight {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+.container-keyvisual {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.margin-top-s {
+  margin-top: 10px;
+}
+
+.margin-top-m {
+  margin-top: 20px;
+}
+
+.margin-top-l {
+  margin-top: 40px;
+}
+
+.icon {
+  height: 15px;
+}
+
+/*
+navigation
+*/
+
+.navbar-header {
+  background-color: #fff;
+}
+
+.navbar-collapse {
+  background-color: #f4f4f4;
+}
+
+@media (min-width: 768px)
+.navbar-header {
+  float: none;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-brand > img {
+  height: 30px;
+}
