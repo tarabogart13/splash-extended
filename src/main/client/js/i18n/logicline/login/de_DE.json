@@ -1,0 +1,15 @@
+{
+    "HELLO": "Hallo",
+    "HERE": "hier",
+
+    "LOGIN_HEADLINE": "Anmeldung",
+    "LOGIN_SUBHEADLINE": "Bitte geben Sie Ihre Anmeldedaten ein.",
+    "LOGIN_ERROR": "Anmeldung fehlgeschlagen.",
+    "LOGIN_FORBIDDEN": "Zugriff nicht gestattet.",
+    "LOGIN_LOCK_ERROR": "Die Anmeldeseite wurde gesperrt. Bitte probieren Sie in {{minutes}} Minuten erneut.",
+    "LOGIN_INTERNAL_ERROR": "Die Applikation ist aktuell nicht erreichtbar. Bitte kontaktieren Sie Ihren Administrator.",
+    "LOGIN_INVALID_CONFIG": "Die Konfiguration der App ist noch nicht abgeschlossen. Die Beschreibung finden Sie",
+
+    "LOGIN_FORM_ORGANIZATION_ID": "Anmeldename *",
+    "LOGIN_FORM_PASSWORD": "Passwort *"
+}
