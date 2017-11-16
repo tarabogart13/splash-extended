@@ -1,9 +1,8 @@
 {
-    "name": "logicline",
+    "name": "qaservcecenter",
     "version": "1.0.0",
-    "description": "logicline",
-    "repository": "https://github.com/logiclinegmbh/splash-extended",
-    "license": "MIT",
+    "description": "Sumitomo Quality Service Center",
+    "repository": "https://github.com/tarabogart13/splash-extended",
     "engines": {
         "node": ">=6.2.0 <7.0.0",
         "npm": "~3.9.5"
